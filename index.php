@@ -19,7 +19,8 @@ include("heather.php");
                 <!-- <th>Id</th> -->
                 <th scope="col">Nombre</th>
                 <th scope="col">Descripcion</th>  
-                <th scope="col">Recomendacion</th>  
+                <th scope="col">Recomendacion</th> 
+                <th scope="col">Print</th> 
             </tr>
            </thead>
            <tbody>
@@ -31,6 +32,7 @@ include("heather.php");
                        <th scope="row"><?php echo $fila["nombre"] ?></th>
                        <td><?php echo $fila["description"] ?></td>
                        <td><?php echo $fila["recomendacion"] ?></td>
+                       <td><button>Print</button></td>
                    </tr>
               <?php } ?>
               
