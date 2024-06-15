@@ -1,26 +1,18 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Logo w/ text</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        Navbar text with an inline element
-      </span>
+<footer>
+    <div class="container text-center" style="width:90vw;">
+      <div class="cj-cajaFooter row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-auto">
+        <div class="col"><a href="" class="cj-menuFooter">Preguntas Frecuentes</a></div>
+        <div class="col"><a href="" class="cj-menuFooter">Contáctanos</a></div>
+        <div class="col"><a href="" class="cj-menuFooter">Prensa</a></div>
+      </div>
+      <div class="cj-signatureFooter">
+        <div><small> @ Derechos Reservados 2024 Developer Full Stack Claudia E. Julian </small></div>
+      </div>
     </div>
-  </div>
-</nav>
+  </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="scrips.js"></script>
+
+</body>
+</html> 
