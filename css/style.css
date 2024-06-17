@@ -1,5 +1,6 @@
 *{
     margin:0px;
+    padding:0px;
 }
 main{
     min-height: 70vh;
@@ -10,13 +11,14 @@ table{
 }
 /* CLASES */
 
+
 /* HEADER */
 .cj-banner {
     display:flex;
      flex-direction: column;
      align-items: flex-end;
  
-     background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)),url(../img/hdbanner.jpg);
+     background-image:linear-gradient(rgba(1, 9, 52, 0.3),rgba(8, 1, 65, 0.3)),url(../img/hdbanner.jpg);
  
      height: 50vh;
      margin-bottom: 3vh;
@@ -47,15 +49,23 @@ footer{
 
 /* FORM NEW DATA */
 .cj-textareaAddData{
+    width: 100%;
     font-size: smaller;
     border:none;
     height:5rem;
+    background-color: rgb(158, 231, 211);
 }
 .cj-inputAddData{
+    width: 100%;
     border:none;
+    background-color: rgb(158, 231, 211);
 }
 
 /* LIST DATA */
+::placeholder{
+    color:whitesmoke;
+    font-size: medium;
+}
 th, td{
     height: 30px;
     overflow: hidden;
@@ -65,17 +75,24 @@ th, td{
     
 }
 .cj-thDataName{
-    width: 5vw; 
+    width: 4vw; 
+    background-color: blue;
 }
-
+.cj-tdDescriptionContent{
+    width: 15vw; 
+    padding: 5px; 
+    height: 30px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
 .cj-tdDataContent{ 
     width: 25vw; 
     padding: 5px; 
     height: 30px;
     overflow:hidden;
     white-space: nowrap;
-    text-overflow:ellipsis;
-   
+    text-overflow:ellipsis; 
 }
 .cj-tdMethod{
     width: 5vw;
@@ -86,4 +103,7 @@ th, td{
     flex-direction: row;
     justify-content: space-between;
     
+}
+.cj-formAddDisease{
+    background-color: rgb(158, 231, 211);
 }
