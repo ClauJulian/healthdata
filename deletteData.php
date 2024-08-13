@@ -9,7 +9,7 @@ $conexion = conexion();
 
 $id = $_GET["id"];
 
-$sql = "DELETE FROM enfermedad WHERE id=$id";
+$sql = "DELETE FROM enfermedadades WHERE id=$id";
 
 $query = mysqli_query($conexion, $sql);
 

@@ -2,7 +2,7 @@
 include("conexion.php");
 $conexion = conexion();
 
-$sql = "SELECT * FROM enfermedad";
+$sql = "SELECT * FROM enfermedadades";
 
 $query = mysqli_query($conexion, $sql);
 
@@ -37,9 +37,9 @@ include("heather.php");
                        <td><div class="cj-tdDataContent"><?php echo $fila["recomendacion"] ?></div></td>
                        <td class="cj-tdMethod">
                         <div class="cj-groupBtn">
-                            <a title="Delette" href="deletteData.php?id=<?php echo $fila["id"]?>">🗑️</a>
-                            <a title="Edit">🖊️</a> 
-                            <a title="Print" href="viewData.php?id=<?php echo $fila["id"]?>">🗒️</a> 
+                            <a title="Delette" href="deletteData.php?id=<?php echo $fila["id"]?>"><i class="bi bi-trash3"></i></a>
+                            <a title="Edit"><i class="bi bi-file-earmark-font"></i></a> 
+                            <a title="Print" href="viewData.php?id=<?php echo $fila["id"]?>"><i class="bi bi-card-checklist"></i></a> 
                         </div>
                         </td>
                    </tr>

@@ -4,14 +4,14 @@ $conexion = conexion();
 
 $id = $_GET["id"];
 
-$sql = "SELECT * FROM enfermedad WHERE id=$id";
+$sql = "SELECT * FROM enfermedadades WHERE id=$id";
 
 $query = mysqli_query($conexion, $sql);
 
 include("heather.php");
 ?> 
-
-<div class="container d-flex justify-content-center">
+<main class="container">
+<div class="container d-flex justify-content-center cj-printarea" id="cj-printarea">
     <?php
     while($fila=mysqli_fetch_assoc($query)){
     ?>
@@ -26,10 +26,14 @@ include("heather.php");
                 <li class="list-group-item"><?php echo $fila["recomendacion"] ?></li>
             </ul>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-success">Go somewhere</a>
+            <button id="cj-print-btn" type="submit" class="btn btn-success">Print</button>
         </div>
     </div>
 
     <?php } ?>
 
 </div>
+</main>
+<?php 
+include("footer.php");
+?>

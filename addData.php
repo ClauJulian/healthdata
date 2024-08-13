@@ -12,7 +12,7 @@ $description = $_GET["description"];
 $recomendacion = $_GET["recommendation"];
 
 
-$sql = "INSERT INTO enfermedad VALUES (NULL, '$nombre','$description','$recomendacion')";
+$sql = "INSERT INTO enfermedadades VALUES (NULL, '$nombre','$description','$recomendacion')";
 
 $query = mysqli_query($conexion, $sql);
 
